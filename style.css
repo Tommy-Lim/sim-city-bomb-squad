@@ -128,3 +128,15 @@ button{
 #reset{
   background-color: rgb(207, 202, 190);
 }
+
+#tracker{
+  height: 30px;
+  width:  0%;
+  background-color: red;
+}
+
+.tracker{
+  width: 100%;
+  background-color: rgba(0,0,0,.8);
+  padding-top: 10px;
+}

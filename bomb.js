@@ -9,6 +9,7 @@ var resetButton = document.getElementById('reset');
 var interval;
 var wireArray=[0,0,0,0,0];
 var userArray=[0,0,0,0,0];
+var startTime;
 
 wire1.addEventListener('click',function(){wire1.className="wire cut-blue"; checkCut(wire1.getAttribute("value"));});
 wire2.addEventListener('click',function(){wire2.className="wire cut-red"; return checkCut(wire2.getAttribute("value"));});
@@ -44,6 +45,9 @@ var checkCut = function(num){
 var countDown = function(){
   document.getElementById('container-timer').textContent = time;
   time--;
+  var percent = Math.floor((1-(time/startTime))*100)+"%";
+  console.log(percent);
+  document.getElementById('tracker').style.width=percent;
   if(time<=0){
     document.getElementById('container-timer').textContent = time;
     clearInterval(interval);
@@ -75,6 +79,7 @@ var reset = function(){
   document.getElementById('body').className="unexploded";
   clearInterval(interval);
   time = document.getElementById('seconds').value;
+  startTime = time = document.getElementById('seconds').value;
   document.getElementById('container-timer').textContent = time;
   interval = setInterval(countDown,1000);
 };

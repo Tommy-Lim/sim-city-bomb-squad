@@ -15,8 +15,8 @@ wire2.addEventListener('click',function(){wire2.className="wire cut-red"; return
 wire3.addEventListener('click',function(){wire3.className="wire cut-yellow"; return checkCut(wire3.getAttribute("value"));});
 wire4.addEventListener('click',function(){wire4.className="wire cut-white"; return checkCut(wire4.getAttribute("value"));});
 wire5.addEventListener('click',function(){wire5.className="wire cut-green"; return checkCut(wire5.getAttribute("value"));});
-
-document.getElementById('container-timer').textContent = time;
+//
+// document.getElementById('container-timer').textContent = "Press Start";
 
 var setWires = function(){
   for(i=0; i<5; i++){

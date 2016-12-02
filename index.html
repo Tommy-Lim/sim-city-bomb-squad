@@ -4,12 +4,11 @@
     <meta charset="utf-8">
     <title>Sim City Bomb Squad</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
   </head>
   <body class="unexploded" id="body">
     <div class="container-all">
-      <div id="container-timer">
-
-      </div>
+      <div id="container-timer">Press Start</div>
       <div class="container-wires">
         <div class="wire blue" id="wire1" value="0"></div>
         <div class="wire red" id="wire2"  value="1"></div>
@@ -20,9 +19,12 @@
       <div class="container-bottom">
         <label><input type="number" id="seconds" value="30" /> seconds</label>
       </div>
-      <div class="container-bottom" style="padding-top: 0px;">
+      <div class="container-bottom">
         <button id="start">Start</button>
         <button id="reset">Reset</button>
+      </div>
+      <div class="container-bottom">
+
       </div>
     </div>
     <script src="bomb.js"></script>
